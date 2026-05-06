@@ -15,10 +15,9 @@
 import { useState, useEffect, useRef } from "react";
 
 // â”€â”€ CONFIG (swap these out) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-const SUPABASE_URL = "YOUR_SUPABASE_URL";
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
-const STRIPE_STARTER = "YOUR_STRIPE_STARTER_PAYMENT_LINK";
-const STRIPE_GROWTH = "YOUR_STRIPE_GROWTH_PAYMENT_LINK";
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY
+RAZORPAY_KEY_ID = import.meta.env.VITE_RAZORPAY_KEY_ID;
 const CLAUDE_MODEL = "claude-sonnet-4-20250514";
 
 // â”€â”€ SUPABASE CLIENT (no SDK needed) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
